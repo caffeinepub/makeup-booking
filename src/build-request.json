@@ -1,0 +1,81 @@
+{
+  "kind": "build_request",
+  "title": "Add service area information for Hyderabad, Secunderabad, and outskirts",
+  "projectName": "Naaz Studio",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-21",
+      "text": "Add a service area section to the homepage that displays 'Serving Hyderabad, Secunderabad, and outskirts' with appropriate styling consistent with the beauty industry aesthetic",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-current"
+        ],
+        "quotes": [
+          "In Hyderabad and secdrabad and out skirts"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Service area information is visible on the homepage",
+        "Text mentions 'Hyderabad, Secunderabad, and outskirts'",
+        "Styling matches the existing rose gold and elegant design theme",
+        "Section is positioned prominently near contact information or hero section"
+      ]
+    },
+    {
+      "id": "REQ-22",
+      "text": "Update the footer section in the Layout component to include service area information 'Serving Hyderabad, Secunderabad, and outskirts' near the contact phone numbers",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-current"
+        ],
+        "quotes": [
+          "In Hyderabad and secdrabad and out skirts"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Service area text is displayed in the footer",
+        "Information is positioned near the existing phone numbers",
+        "Text formatting is consistent with footer styling",
+        "Service area is visible on all pages through the Layout component"
+      ]
+    },
+    {
+      "id": "REQ-23",
+      "text": "Add service area 'Hyderabad, Secunderabad, and outskirts' to the contact section on the homepage alongside the phone numbers and 24/7 availability information",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-current"
+        ],
+        "quotes": [
+          "In Hyderabad and secdrabad and out skirts"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Service area information appears in the contact section",
+        "Text is grouped logically with contact phone numbers and availability info",
+        "Styling matches the existing contact section design",
+        "Information is clearly readable and prominent"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify backend/main.mo",
+    "Do not modify immutable frontend paths: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui",
+    "Maintain existing rose gold and elegant beauty industry aesthetic",
+    "Keep consistent with existing contact information display patterns"
+  ],
+  "nonGoals": [
+    "Adding geographic boundaries or detailed service area maps",
+    "Implementing location-based service filtering",
+    "Adding backend logic for service area management",
+    "Creating separate pages for different service areas"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

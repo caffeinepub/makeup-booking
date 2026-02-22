@@ -1,0 +1,62 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-a-service-area-section-to-the-homepage-that-displays-serving-hyderabad-secunderabad-and-outskirts-with-appropriate-styling-consistent-with-the-beauty-industry-aesthetic",
+      "featureTitle": "Add a service area section to the homepage that displays 'Serving Hyderabad, Secunderabad, and outskirts' with appropriate styling consistent with the beauty industry aesthetic",
+      "files": [
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-21"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-footer-section-in-the-layout-component-to-include-service-area-information-serving-hyderabad-secunderabad-and-outskirts-near-the-contact-phone-numbers",
+      "featureTitle": "Update the footer section in the Layout component to include service area information 'Serving Hyderabad, Secunderabad, and outskirts' near the contact phone numbers",
+      "files": [
+        "frontend/src/components/Layout.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-22"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-service-area-hyderabad-secunderabad-and-outskirts-to-the-contact-section-on-the-homepage-alongside-the-phone-numbers-and-24-7-availability-information",
+      "featureTitle": "Add service area 'Hyderabad, Secunderabad, and outskirts' to the contact section on the homepage alongside the phone numbers and 24/7 availability information",
+      "files": [
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-23"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

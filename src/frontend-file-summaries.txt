@@ -1,0 +1,20 @@
+{
+  "frontend/src/index.css": "Global styles with beauty-industry OKLCH color system featuring rose gold, soft cream, and elegant pastels for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with elegant font families (Playfair Display, Cormorant Garamond), refined shadows, and beauty-themed design tokens.",
+  "frontend/src/App.tsx": "Main application component with TanStack Router configuration, theme provider, and all routes including protected admin and booking pages.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations including services, bookings, user profiles, time slots, and admin functions with proper state management.",
+  "frontend/src/components/Layout.tsx": "Application layout wrapper with elegant header navigation including small 24/7 availability badge, footer displaying contact phone numbers as clickable tel: links, service area information \"Serving Hyderabad, Secunderabad, and outskirts\" with map pin icon, and caffeine.ai attribution.",
+  "frontend/src/components/LoginButton.tsx": "Authentication button component handling Internet Identity login/logout with proper error handling and query cache clearing.",
+  "frontend/src/components/ProfileSetupModal.tsx": "Modal dialog for first-time user profile setup that collects name, email, and phone with proper loading state handling to prevent flash.",
+  "frontend/src/components/ProtectedRoute.tsx": "Route wrapper component that ensures user authentication before displaying protected content with loading and access denied states.",
+  "frontend/src/components/AccessDeniedScreen.tsx": "Access denied screen displayed when non-admin users attempt to access admin-only pages with navigation back to home.",
+  "frontend/src/pages/HomePage.tsx": "Landing page with hero section, new dedicated service area section displaying \"Hyderabad, Secunderabad, and outskirts\" with elegant styling, portfolio gallery, team profile, contact section with 24/7 availability and service area badges, features section, services preview, and CTA section.",
+  "frontend/src/pages/ServicesPage.tsx": "Services listing page using ServiceCategoryCard components with portfolio images mapped to service categories and location information specifically added for massage/body services.",
+  "frontend/src/pages/BookingPage.tsx": "Booking form page with service selection, date picker, time slot selector, and contact information fields pre-filled from user profile.",
+  "frontend/src/pages/BookingConfirmationPage.tsx": "Confirmation page displaying successful booking with booking ID and navigation options to home or book another appointment.",
+  "frontend/src/pages/AdminBookingsPage.tsx": "Admin dashboard for viewing and managing all bookings with service/date filters, sortable table, and status update controls with role-based access.",
+  "frontend/index.html": "HTML entry point with document title updated to \"Naaz Studio - Makeup Booking\".",
+  "frontend/src/components/PortfolioGallery.tsx": "Reusable portfolio gallery component displaying images in a responsive grid (1-4 columns) with hover effects, lightbox dialog for full-size viewing, and elegant transitions using the rose gold theme.",
+  "frontend/src/components/TeamMemberProfile.tsx": "Team member profile card component featuring bio text alongside a 2x2 grid of portfolio images with hover effects, designed for showcasing Naziya's work and expertise.",
+  "frontend/src/components/ServiceCategoryCard.tsx": "Service card component with portfolio image background overlay, displaying service details (name, duration, price) and optional location information with map pin icon when provided."
+}
