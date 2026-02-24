@@ -1,0 +1,38 @@
+{
+  "kind": "build_request",
+  "title": "Restore version 17",
+  "projectName": "Naaz Studio",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Restore the application to the state it was in at version 17, reverting all changes made after that version across both frontend and backend.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Create version 17 again"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The deployed application matches the behavior and appearance of version 17.",
+        "All frontend and backend changes introduced after version 17 are reverted.",
+        "The app builds and deploys without errors."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not introduce any new features or changes beyond restoring version 17.",
+    "Immutable frontend paths (frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui) must not be modified."
+  ],
+  "nonGoals": [
+    "Applying any fixes or improvements from versions 18 through 27.",
+    "Introducing new functionality not present in version 17."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

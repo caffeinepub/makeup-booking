@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Rose gold & cream beauty palette */
+    --background: oklch(0.99 0.005 60);
+    --foreground: oklch(0.18 0.02 30);
+
+    --card: oklch(0.97 0.008 55);
+    --card-foreground: oklch(0.18 0.02 30);
+
+    --popover: oklch(0.99 0.005 60);
+    --popover-foreground: oklch(0.18 0.02 30);
+
+    /* Rose gold primary */
+    --primary: oklch(0.62 0.12 25);
+    --primary-foreground: oklch(0.99 0.005 60);
+
+    --secondary: oklch(0.92 0.02 50);
+    --secondary-foreground: oklch(0.25 0.03 30);
+
+    --muted: oklch(0.94 0.01 55);
+    --muted-foreground: oklch(0.52 0.03 40);
+
+    /* Warm gold accent */
+    --accent: oklch(0.78 0.10 65);
+    --accent-foreground: oklch(0.18 0.02 30);
+
+    --destructive: oklch(0.55 0.22 25);
+    --destructive-foreground: oklch(0.99 0.005 60);
+
+    --border: oklch(0.88 0.015 50);
+    --input: oklch(0.88 0.015 50);
+    --ring: oklch(0.62 0.12 25);
+
+    --radius: 0.75rem;
+
+    --success: oklch(0.65 0.15 145);
+    --warning: oklch(0.78 0.15 75);
+  }
+
+  .dark {
+    --background: oklch(0.12 0.015 30);
+    --foreground: oklch(0.95 0.008 55);
+
+    --card: oklch(0.16 0.018 30);
+    --card-foreground: oklch(0.95 0.008 55);
+
+    --popover: oklch(0.16 0.018 30);
+    --popover-foreground: oklch(0.95 0.008 55);
+
+    --primary: oklch(0.72 0.12 25);
+    --primary-foreground: oklch(0.12 0.015 30);
+
+    --secondary: oklch(0.22 0.02 35);
+    --secondary-foreground: oklch(0.90 0.01 55);
+
+    --muted: oklch(0.20 0.015 35);
+    --muted-foreground: oklch(0.65 0.03 45);
+
+    --accent: oklch(0.72 0.10 65);
+    --accent-foreground: oklch(0.12 0.015 30);
+
+    --destructive: oklch(0.60 0.22 25);
+    --destructive-foreground: oklch(0.99 0.005 60);
+
+    --border: oklch(0.25 0.02 35);
+    --input: oklch(0.25 0.02 35);
+    --ring: oklch(0.72 0.12 25);
+
+    --success: oklch(0.65 0.15 145);
+    --warning: oklch(0.78 0.15 75);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}

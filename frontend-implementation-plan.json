@@ -1,0 +1,283 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Restore Naaz Studio to Version 17 (Frontend)",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Restore the frontend application to the state it was in at version 17, reverting all changes made after that version",
+      "acceptanceCriteria": [
+        "The deployed application matches the behavior and appearance of version 17.",
+        "All frontend changes introduced after version 17 are reverted.",
+        "The app builds and deploys without errors."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Restore the main App router configuration to match version 17, removing any routes or functionality added after that version."
+        },
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Restore the HomePage component to its version 17 state, reverting any layout, content, or functionality changes made subsequently."
+        },
+        {
+          "path": "frontend/src/pages/ServicesPage.tsx",
+          "operation": "modify",
+          "description": "Restore the ServicesPage to version 17, ensuring service display and lead capture functionality matches the original implementation."
+        },
+        {
+          "path": "frontend/src/pages/BookingPage.tsx",
+          "operation": "modify",
+          "description": "Restore the BookingPage to version 17 state, reverting any form changes, validation logic, or UI modifications made after that version."
+        },
+        {
+          "path": "frontend/src/pages/BookingConfirmationPage.tsx",
+          "operation": "modify",
+          "description": "Restore the booking confirmation page to its version 17 implementation."
+        },
+        {
+          "path": "frontend/src/components/Layout.tsx",
+          "operation": "modify",
+          "description": "Restore the main Layout component to version 17, ensuring navigation, header, and footer match the original design and functionality."
+        },
+        {
+          "path": "frontend/src/components/ServiceCategoryCard.tsx",
+          "operation": "modify",
+          "description": "Restore the ServiceCategoryCard component to version 17 state, reverting any styling or interaction changes."
+        },
+        {
+          "path": "frontend/src/components/LeadCaptureModal.tsx",
+          "operation": "modify",
+          "description": "Restore the LeadCaptureModal to its version 17 implementation, ensuring form fields and submission logic match the original."
+        },
+        {
+          "path": "frontend/src/components/PortfolioGallery.tsx",
+          "operation": "modify",
+          "description": "Restore the PortfolioGallery component to version 17, reverting any layout or lightbox functionality changes."
+        },
+        {
+          "path": "frontend/src/components/LoginButton.tsx",
+          "operation": "modify",
+          "description": "Restore the LoginButton component to version 17 state, ensuring authentication flow matches the original implementation."
+        },
+        {
+          "path": "frontend/src/components/ProfileSetupModal.tsx",
+          "operation": "modify",
+          "description": "Restore the ProfileSetupModal to version 17, reverting any form or validation changes."
+        },
+        {
+          "path": "frontend/src/components/ProtectedRoute.tsx",
+          "operation": "modify",
+          "description": "Restore the ProtectedRoute guard component to its version 17 implementation."
+        },
+        {
+          "path": "frontend/src/hooks/useQueries.ts",
+          "operation": "modify",
+          "description": "Restore all React Query hooks to their version 17 state, ensuring backend interaction logic matches the original implementation."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Restore global CSS and design tokens to version 17, reverting any theme or styling changes made after that version."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Restore Tailwind configuration to version 17 state, ensuring color schemes, fonts, and utility classes match the original setup."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Restore the main HTML entry point to version 17, reverting any meta tags, scripts, or structural changes."
+        },
+        {
+          "path": "frontend/admin.html",
+          "operation": "delete",
+          "description": "Remove the admin portal HTML entry point if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/admin-main.tsx",
+          "operation": "delete",
+          "description": "Remove the admin portal React entry point if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/AdminApp.tsx",
+          "operation": "delete",
+          "description": "Remove the AdminApp router if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/pages/AdminLoginPage.tsx",
+          "operation": "delete",
+          "description": "Remove the admin login page if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/pages/AdminBookingsPage.tsx",
+          "operation": "delete",
+          "description": "Remove the admin bookings management page if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/components/AdminLayout.tsx",
+          "operation": "delete",
+          "description": "Remove the AdminLayout component if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/components/AdminProtectedRoute.tsx",
+          "operation": "delete",
+          "description": "Remove the AdminProtectedRoute guard if it was added after version 17."
+        },
+        {
+          "path": "frontend/admin-leads.html",
+          "operation": "delete",
+          "description": "Remove the admin leads HTML entry point if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/admin-leads-main.tsx",
+          "operation": "delete",
+          "description": "Remove the admin leads React entry point if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/AdminLeadsApp.tsx",
+          "operation": "delete",
+          "description": "Remove the AdminLeadsApp router if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/pages/AdminLeadsDashboardPage.tsx",
+          "operation": "delete",
+          "description": "Remove the admin leads dashboard page if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/pages/AdminLeadsLoginPage.tsx",
+          "operation": "delete",
+          "description": "Remove the admin leads login page if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/components/AdminLeadsLayout.tsx",
+          "operation": "delete",
+          "description": "Remove the AdminLeadsLayout component if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/components/AdminLeadsProtectedRoute.tsx",
+          "operation": "delete",
+          "description": "Remove the AdminLeadsProtectedRoute guard if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/components/AdminLeadsTable.tsx",
+          "operation": "delete",
+          "description": "Remove the AdminLeadsTable component if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/components/AdminLeadsManagementTable.tsx",
+          "operation": "delete",
+          "description": "Remove the AdminLeadsManagementTable component if it was added after version 17."
+        },
+        {
+          "path": "frontend/employee.html",
+          "operation": "delete",
+          "description": "Remove the employee portal HTML entry point if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/employee-main.tsx",
+          "operation": "delete",
+          "description": "Remove the employee portal React entry point if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/EmployeeApp.tsx",
+          "operation": "delete",
+          "description": "Remove the EmployeeApp router if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/pages/EmployeeDashboardPage.tsx",
+          "operation": "delete",
+          "description": "Remove the employee dashboard page if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/pages/EmployeeLoginPage.tsx",
+          "operation": "delete",
+          "description": "Remove the employee login page if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/components/EmployeeLayout.tsx",
+          "operation": "delete",
+          "description": "Remove the EmployeeLayout component if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/components/EmployeeProtectedRoute.tsx",
+          "operation": "delete",
+          "description": "Remove the EmployeeProtectedRoute guard if it was added after version 17."
+        },
+        {
+          "path": "frontend/employee-leads.html",
+          "operation": "delete",
+          "description": "Remove the employee leads HTML entry point if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/employee-leads-main.tsx",
+          "operation": "delete",
+          "description": "Remove the employee leads React entry point if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/EmployeeLeadsApp.tsx",
+          "operation": "delete",
+          "description": "Remove the EmployeeLeadsApp router if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/pages/EmployeeLeadsDashboardPage.tsx",
+          "operation": "delete",
+          "description": "Remove the employee leads dashboard page if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/pages/EmployeeLeadsLoginPage.tsx",
+          "operation": "delete",
+          "description": "Remove the employee leads login page if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/components/EmployeeLeadsLayout.tsx",
+          "operation": "delete",
+          "description": "Remove the EmployeeLeadsLayout component if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/components/EmployeeLeadsProtectedRoute.tsx",
+          "operation": "delete",
+          "description": "Remove the EmployeeLeadsProtectedRoute guard if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/components/EmployeeLeadsTable.tsx",
+          "operation": "delete",
+          "description": "Remove the EmployeeLeadsTable component if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/components/EmployeeLeadsFilterPanel.tsx",
+          "operation": "delete",
+          "description": "Remove the EmployeeLeadsFilterPanel component if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/components/LeadsTable.tsx",
+          "operation": "delete",
+          "description": "Remove the LeadsTable component if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/components/LeadsFilterPanel.tsx",
+          "operation": "delete",
+          "description": "Remove the LeadsFilterPanel component if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/components/AccessDeniedScreen.tsx",
+          "operation": "delete",
+          "description": "Remove the AccessDeniedScreen component if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/components/TeamMemberProfile.tsx",
+          "operation": "delete",
+          "description": "Remove the TeamMemberProfile component if it was added after version 17."
+        },
+        {
+          "path": "frontend/src/utils/urlParams.ts",
+          "operation": "delete",
+          "description": "Remove URL parameter utilities if they were added after version 17."
+        }
+      ]
+    }
+  ]
+}
